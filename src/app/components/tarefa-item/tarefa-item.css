@@ -1,0 +1,58 @@
+.item {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.item__titulo {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.item__descricao {
+  margin: 0 0 8px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Estado: pendente */
+.item--pendente {
+  background-color: #fff;
+  border-left: 4px solid #f0a020;
+}
+
+/* Estado: concluída */
+.item--concluida {
+  background-color: #f4f9f4;
+  border-left: 4px solid #3a9e3a;
+  opacity: 0.7;
+}
+
+.item--concluida .item__titulo,
+.item--concluida .item__descricao {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Selo de status */
+.status {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status--concluida {
+  background-color: #3a9e3a;
+  color: #fff;
+}
+
+.status--pendente {
+  background-color: #f0a020;
+  color: #fff;
+}

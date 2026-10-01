@@ -1,0 +1,11 @@
+<article class="item" [class.item--concluida]="tarefa().concluida" [class.item--pendente]="!tarefa().concluida">
+    <h3 class="item_titulo">{{tarefa().titulo}}</h3>
+    <p class="item_descricao">{{tarefa().descricao}}</p>
+
+    @if (tarefa().concluida) {
+        <samp class="status status--concluida">Concluida</samp>
+    } @else {
+        <samp class="status status--pendente">Pendente</samp>
+    }
+</article>
+

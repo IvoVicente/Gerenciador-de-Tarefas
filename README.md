@@ -1,4 +1,42 @@
-# GerenciadorTarefas
+# Gerenciador de Tarefas
+
+Aplicação Angular (standalone components) que exibe uma lista de tarefas mockadas.
+
+## Requisitos
+
+- Node.js 20+ (ou a versão que o Angular exigir — checar em `angular.json` ou `package.json`)
+- npm 10+
+
+## Como rodar
+
+```bash
+npm install
+npm start || ng serve
+```
+Acesse http://localhost:4200 no navegador.
+
+## Como buildar
+
+```bash
+npm run build
+```
+Os arquivos finais ficam em dist/.
+
+## Estrutura 
+
+src/app/models/ — interfaces de domínio (ex.: Tarefa)
+
+src/app/mocks/ — dados de exemplo usados enquanto não há API
+
+src/app/components/ — componentes da aplicação
+
+## Escopo
+
+Nível 1 do desafio: listagem de tarefas com dados locais.
+Uso de control flow moderno (@for/track, @if/@else, @empty) e signals.
+Sem consumo de API nesta etapa.
+
+# As coisas do angular
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.5.
 

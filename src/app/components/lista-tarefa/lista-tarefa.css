@@ -1,0 +1,36 @@
+.lista_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.lista_header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.lista_resumo {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.lista {
+  max-width: 640px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.lista h2 {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+}
+
+.vazio {
+  padding: 24px;
+  text-align: center;
+  color: #777;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+}

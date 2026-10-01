@@ -1,0 +1,20 @@
+<section class="lista">
+
+    <header class="lista_header">
+
+    <h2>Minhas tarefas</h2>
+
+    <p class="lista_resumo">
+        {{pendentes()}} de {{total()}} pendentes
+    </p>
+
+    </header>
+
+    @for (tarefa of tarefas(); track tarefa.id) {
+        <app-tarefa-item [tarefa]="tarefa"></app-tarefa-item>
+    }@empty {
+        <p class="vazio">Nenhuma tarefa ainda...</p>
+    }
+
+    
+</section>
