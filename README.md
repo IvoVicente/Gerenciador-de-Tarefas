@@ -32,9 +32,9 @@ src/app/components/ — componentes da aplicação
 
 ## Escopo
 
-Nível 1 do desafio: listagem de tarefas com dados locais.
-Uso de control flow moderno (@for/track, @if/@else, @empty) e signals.
-Sem consumo de API nesta etapa.
+- Nível 1 do desafio: listagem de tarefas com dados locais.
+- Uso de control flow moderno (@for/track, @if/@else, @empty) e signals.
+- Sem consumo de API nesta etapa.
 
 # As coisas do angular
 
