@@ -6,12 +6,12 @@
   transition: background-color 0.2s, opacity 0.2s;
 }
 
-.item__titulo {
+.item_titulo {
   margin: 0 0 4px;
   font-size: 1rem;
 }
 
-.item__descricao {
+.item_descricao {
   margin: 0 0 8px;
   color: #555;
   font-size: 0.9rem;
@@ -30,8 +30,8 @@
   opacity: 0.7;
 }
 
-.item--concluida .item__titulo,
-.item--concluida .item__descricao {
+.item--concluida .item_titulo,
+.item--concluida .item_descricao {
   text-decoration: line-through;
   color: #777;
 }
