@@ -30,6 +30,8 @@ src/app/mocks/ — dados de exemplo usados enquanto não há API
 
 src/app/components/ — componentes da aplicação
 
+src/app/services/ — serviços que abstraem o acesso aos dados
+
 ## Escopo
 
 - Nível 1 do desafio: listagem de tarefas com dados locais.

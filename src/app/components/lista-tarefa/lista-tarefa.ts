@@ -1,7 +1,7 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { TarefaItem } from '../tarefa-item/tarefa-item';
 import { Tarefa } from '../../models/tarefa';
-import { TAREFAS_MOCK } from '../../mocks/tarefa.mock';
+import { TarefaService } from '../../services/tarefa.services';
 
 @Component({
   selector: 'app-lista-tarefa',
@@ -10,7 +10,10 @@ import { TAREFAS_MOCK } from '../../mocks/tarefa.mock';
   styleUrl: './lista-tarefa.css',
 })
 export class ListaTarefa {
-  readonly tarefas = signal<Tarefa[]>(TAREFAS_MOCK);
+
+  private readonly tarefaService = inject(TarefaService)
+
+  readonly tarefas = signal<Tarefa[]>(this.tarefaService.obterTodos());
 
   readonly pendentes = computed (()=>
   this.tarefas().filter(t => !t.concluida).length
