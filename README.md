@@ -11,7 +11,7 @@ Aplicação Angular (standalone components) que exibe uma lista de tarefas mocka
 
 ```bash
 npm install
-npm start || ng serve
+npm start
 ```
 Acesse http://localhost:4200 no navegador.
 

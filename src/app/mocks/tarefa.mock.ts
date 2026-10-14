@@ -11,8 +11,8 @@ export const TAREFAS_MOCK: Tarefas[] = [
 
     {
         id: 2,
-        titulo: "Projeto em Angula",
-        descricao: "fazer o esquelo do projeto em Angula",
+        titulo: "Projeto em Angular",
+        descricao: "fazer o esqueleto do projeto em Angular",
         concluida: false,
     },
 
