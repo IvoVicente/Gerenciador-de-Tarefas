@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Tarefas } from '../../models/tarefa';
+import { Tarefa } from '../../models/tarefa';
 
 @Component({
   selector: 'app-tarefa-item',
@@ -8,5 +8,5 @@ import { Tarefas } from '../../models/tarefa';
   styleUrl: './tarefa-item.css',
 })
 export class TarefaItem {
-  readonly tarefa = input.required<Tarefas>();
+  readonly tarefa = input.required<Tarefa>();
 }

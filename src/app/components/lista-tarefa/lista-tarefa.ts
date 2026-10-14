@@ -1,6 +1,6 @@
 import { Component, computed, signal } from '@angular/core';
 import { TarefaItem } from '../tarefa-item/tarefa-item';
-import { Tarefas } from '../../models/tarefa';
+import { Tarefa } from '../../models/tarefa';
 import { TAREFAS_MOCK } from '../../mocks/tarefa.mock';
 
 @Component({
@@ -10,7 +10,7 @@ import { TAREFAS_MOCK } from '../../mocks/tarefa.mock';
   styleUrl: './lista-tarefa.css',
 })
 export class ListaTarefa {
-  readonly tarefas = signal<Tarefas[]>(TAREFAS_MOCK);
+  readonly tarefas = signal<Tarefa[]>(TAREFAS_MOCK);
 
   readonly pendentes = computed (()=>
   this.tarefas().filter(t => !t.concluida).length

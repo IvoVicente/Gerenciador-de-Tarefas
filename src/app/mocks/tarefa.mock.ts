@@ -1,6 +1,6 @@
-import { Tarefas } from "../models/tarefa";
+import { Tarefa } from "../models/tarefa";
 
-export const TAREFAS_MOCK: Tarefas[] = [
+export const TAREFAS_MOCK: Tarefa[] = [
 
     {
         id: 1,

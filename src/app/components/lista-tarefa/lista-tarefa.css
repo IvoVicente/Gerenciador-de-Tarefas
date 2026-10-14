@@ -1,16 +1,16 @@
-.lista_header {
+.lista__header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 16px;
 }
 
-.lista_header h2 {
+.lista__header h2 {
   margin: 0;
   font-size: 1.4rem;
 }
 
-.lista_resumo {
+.lista__resumo {
   margin: 0;
   color: #666;
   font-size: 0.9rem;
