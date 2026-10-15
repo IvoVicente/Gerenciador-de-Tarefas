@@ -3,7 +3,9 @@
   border: 1px solid #ddd;
   border-radius: 6px;
   margin-bottom: 8px;
-  transition: background-color 0.2s, opacity 0.2s;
+  transition:
+    background-color 0.2s,
+    opacity 0.2s;
 }
 
 .item__titulo {

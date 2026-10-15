@@ -13,6 +13,7 @@ Aplicação Angular (standalone components) que exibe uma lista de tarefas mocka
 npm install
 npm start
 ```
+
 Acesse http://localhost:4200 no navegador.
 
 ## Como buildar
@@ -20,9 +21,10 @@ Acesse http://localhost:4200 no navegador.
 ```bash
 npm run build
 ```
+
 Os arquivos finais ficam em dist/.
 
-## Estrutura 
+## Estrutura
 
 src/app/models/ — interfaces de domínio (ex.: Tarefa)
 

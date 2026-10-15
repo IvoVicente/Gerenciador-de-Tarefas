@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Tarefa } from '../../models/tarefa';
 
 @Component({
@@ -6,6 +6,7 @@ import { Tarefa } from '../../models/tarefa';
   imports: [],
   templateUrl: './tarefa-item.html',
   styleUrl: './tarefa-item.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TarefaItem {
   readonly tarefa = input.required<Tarefa>();

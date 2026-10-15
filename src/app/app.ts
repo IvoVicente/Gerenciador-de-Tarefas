@@ -5,8 +5,6 @@ import { ListaTarefa } from './components/lista-tarefa/lista-tarefa';
   selector: 'app-root',
   imports: [ListaTarefa],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  
-}
+export class App {}
